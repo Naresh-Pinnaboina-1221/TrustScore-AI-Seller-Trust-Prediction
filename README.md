@@ -1,4 +1,4 @@
-# 🛒 TrustScore AI — Seller Trust Prediction App
+#  TrustScore AI — Seller Trust Prediction App
 
 A production-ready Flask web app that predicts **marketplace seller trustworthiness**
 using two trained ML models:
@@ -7,7 +7,7 @@ using two trained ML models:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 trust_model_app/
@@ -36,7 +36,7 @@ trust_model_app/
 
 ---
 
-## ⚡ Quick Start (5 minutes)
+##  Quick Start (5 minutes)
 
 ### Step 1 — Install Python dependencies
 
@@ -56,15 +56,15 @@ python train_model.py
 
 You'll see output like:
 ```
-📂 Loading dataset...
-   → 5000 rows, 20 columns
-⚙️  Engineering features...
-📏 Scaling features...
-🌲 Training RandomForest Regressor (trust_score)...
-   → MAE: 5.111  |  R²: 0.8583
-🚀 Training GradientBoosting Classifier (trust_label)...
-   → Accuracy: 99.50%
-✅ Done!
+Loading dataset...
+→ 5000 rows, 20 columns
+Engineering features...
+Scaling features...
+Training RandomForest Regressor (trust_score)...
+→ MAE: 5.111  |  R²: 0.8583
+Training GradientBoosting Classifier (trust_label)...
+Accuracy: 99.50%
+Done!
 ```
 
 This creates all `.pkl` files in the `models/` folder.
@@ -81,7 +81,7 @@ Go to: **http://127.0.0.1:5000**
 
 ---
 
-## 🧠 Model Performance
+##  Model Performance
 
 | Model | Algorithm | Metric | Value |
 |-------|-----------|--------|-------|
@@ -94,7 +94,7 @@ Test set: **1,000 sellers**
 
 ---
 
-## 📊 Features Used
+##  Features Used
 
 ### Raw Inputs (14)
 | Feature | Description |
@@ -129,7 +129,7 @@ Test set: **1,000 sellers**
 
 ---
 
-## 🌐 Pages
+##  Pages
 
 | URL | Description |
 |-----|-------------|
@@ -139,7 +139,7 @@ Test set: **1,000 sellers**
 
 ---
 
-## 🔌 JSON API Usage
+##  JSON API Usage
 
 Send a POST request to `/api/predict` with JSON body:
 
@@ -175,7 +175,7 @@ Response:
 
 ---
 
-## 🎯 Score Interpretation
+##  Score Interpretation
 
 | Score Range | Tier | Meaning |
 |-------------|------|---------|
@@ -190,7 +190,7 @@ Response:
 
 ---
 
-## 🛠 Retraining on New Data
+##  Retraining on New Data
 
 To retrain on a new dataset:
 
@@ -203,7 +203,7 @@ The app will automatically pick up the new model files.
 
 ---
 
-## 🚀 Production Deployment
+##  Production Deployment
 
 For production use, change `app.run(debug=True)` to:
 
@@ -219,7 +219,7 @@ gunicorn -w 4 app:app
 
 ---
 
-## 📦 Dependencies
+##  Dependencies
 
 - **Flask** — Web framework
 - **scikit-learn** — ML models
@@ -228,4 +228,3 @@ gunicorn -w 4 app:app
 
 ---
 
-*Built with ❤️ — TrustScore AI v1.0*
