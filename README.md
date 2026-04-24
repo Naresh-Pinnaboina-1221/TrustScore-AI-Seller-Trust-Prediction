@@ -1,4 +1,4 @@
-#  TrustScore AI — Seller Trust Prediction App
+#  TrustScore AI — Seller Trust Prediction
 
 A production-ready Flask web app that predicts **marketplace seller trustworthiness**
 using two trained ML models:
